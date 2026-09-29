@@ -1,0 +1,59 @@
+:root{
+  --fon:#ffffff; --fon2:#f5f6f8; --metin:#1a1d23; --solgun:#5b6170;
+  --xett:#e3e6ec; --vurgu:#c8102e; --vurgu-fon:#fdf0f2;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --fon:#14161a; --fon2:#1c1f25; --metin:#e8eaee; --solgun:#9aa1ae;
+    --xett:#2a2e37; --vurgu:#ff6b7f; --vurgu-fon:#2a1a1e;
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; padding:0 16px 64px;
+  background:var(--fon); color:var(--metin);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+.qab{max-width:720px;margin:0 auto}
+header{padding:40px 0 24px;border-bottom:1px solid var(--xett);margin-bottom:32px}
+.nisan{
+  display:inline-block;padding:4px 10px;border-radius:999px;
+  background:var(--vurgu-fon);color:var(--vurgu);
+  font-size:13px;font-weight:600;letter-spacing:.02em;margin-bottom:12px;
+}
+h1{font-size:28px;line-height:1.25;margin:0 0 8px;letter-spacing:-.01em}
+h2{font-size:20px;margin:36px 0 12px;letter-spacing:-.01em}
+h3{font-size:16px;margin:24px 0 8px}
+.alt{color:var(--solgun);font-size:15px;margin:0}
+p{margin:0 0 14px}
+ul{margin:0 0 14px;padding-inline-start:22px}
+li{margin-bottom:6px}
+a{color:var(--vurgu);text-decoration-thickness:1px;text-underline-offset:2px}
+.qutu{
+  background:var(--fon2);border:1px solid var(--xett);
+  border-radius:12px;padding:18px 20px;margin:20px 0;
+}
+.qutu p:last-child,.qutu ul:last-child{margin-bottom:0}
+.vacib{border-inline-start:3px solid var(--vurgu)}
+.duyme{
+  display:inline-block;background:var(--vurgu);color:#fff;
+  padding:12px 22px;border-radius:10px;text-decoration:none;
+  font-weight:600;margin-top:8px;
+}
+.addim{counter-reset:a;list-style:none;padding:0}
+.addim li{
+  counter-increment:a;position:relative;
+  padding-inline-start:40px;margin-bottom:16px;
+}
+.addim li::before{
+  content:counter(a);position:absolute;inset-inline-start:0;top:0;
+  width:26px;height:26px;border-radius:50%;
+  background:var(--vurgu);color:#fff;
+  font-size:14px;font-weight:700;text-align:center;line-height:26px;
+}
+footer{
+  margin-top:48px;padding-top:24px;border-top:1px solid var(--xett);
+  color:var(--solgun);font-size:14px;
+}
+footer a{color:var(--solgun)}
