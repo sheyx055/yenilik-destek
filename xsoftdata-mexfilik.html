@@ -65,11 +65,13 @@ görmürük, toplamırıq və üçüncü tərəfə vermirik. Məlumatın saxlanm
 yedəklənməsi və girişin idarəsi müəssisənin öz məsuliyyətindədir.</p>
 
 <div class="qutu">
-  <p><strong>Şəbəkə qeydi:</strong> tətbiq birbaşa müəssisənin serverinə
-  qoşulur, aradakı heç bir xidmətə məlumat ötürülmür. Bağlantının
-  şifrələnməsi (HTTPS) serverin quraşdırılmasından asılıdır — serverinizdə
-  sertifikat varsa qoşulma şifrəli olur. Sertifikat yoxdursa, şəbəkənizin
-  təhlükəsizliyinə diqqət edin; HTTPS tövsiyə olunur.</p>
+  <p><strong>Şəbəkə qeydi:</strong> server ünvanını <strong>hər müəssisə özü
+  daxil edir</strong> — tətbiq birbaşa həmin serverə qoşulur, aradakı heç bir
+  xidmətə məlumat ötürülmür. Bizim serverimiz yoxdur.</p>
+  <p>Qoşulma ayarlarında <strong>HTTPS açarı</strong> var: serveriniz HTTPS
+  verirsə məlumat şifrəli ötürülür (öz-özünə imzalanmış sertifikat da
+  qəbul edilir). HTTPS yandırılmayıbsa məlumat <strong>şifrəsiz</strong>
+  gedir — açıq internet üzərindən istifadədə HTTPS tövsiyə olunur.</p>
 </div>
 
 <h2>4. Reklam və analitika yoxdur</h2>
