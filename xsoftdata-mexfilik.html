@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Məxfilik Siyasəti — XSoftData</title>
+<meta name="description" content="XSoftData tətbiqinin məxfilik siyasəti: hansı məlumatlar işlənir, nə cihazda qalır, məlumat müəssisənin öz serverindədir.">
+<link rel="stylesheet" href="ortak.css">
+<style>
+  /* XSoftData yaşıl brend rəngi. Kontrast ölçüldü: #17803A ağ fonda 5.02:1,
+     qutuda 4.64:1; qaranlıqda brend #2BC552 → 7.94:1. */
+  :root{ --vurgu:#17803A; --vurgu-fon:#EDF8F0; }
+  @media (prefers-color-scheme: dark){
+    :root{ --vurgu:#2BC552; --vurgu-fon:#16271C; }
+  }
+</style>
+</head>
+<body>
+<div class="qab">
+
+<header>
+  <span class="nisan">XSoftData</span>
+  <h1>Məxfilik Siyasəti</h1>
+  <p class="alt">Biznes hesabat tətbiqi · Son yenilənmə: 3 oktyabr 2026</p>
+</header>
+
+<p>Bu sənəd <strong>XSoftData</strong> tətbiqinin (iOS və Android) məlumatları
+necə işlətdiyini izah edir. Tətbiq XSoft 1C sistemi quraşdırılmış müəssisələr
+üçün hesabat alətidir.</p>
+
+<div class="qutu vacib">
+  <p><strong>Qısaca:</strong> biz heç bir məlumat toplamırıq və serverimizdə
+  saxlamırıq. Biznes məlumatları <strong>müəssisənin öz 1C serverində</strong>
+  qalır, tətbiq onları yalnız göstərir. Tətbiqdə <strong>reklam, analitika və
+  izləmə sistemi yoxdur</strong>.</p>
+</div>
+
+<h2>1. Cihazda nə saxlanılır</h2>
+<ul>
+  <li><strong>Aktivasiya açarı</strong> — cihazın şifrəli anbarında
+      (iOS-da Keychain, Android-də şifrəli saxlama).</li>
+  <li><strong>Qoşulma parametrləri</strong> (server ünvanı, port, baza adı,
+      1C istifadəçi adı və parolu) — eyni şifrəli anbarda.</li>
+  <li><strong>PIN kodu</strong> — tətbiqə girişi qorumaq üçün, şifrəli şəkildə.
+      Bərpa edilə bilmir.</li>
+  <li><strong>Görünüş seçimləri</strong> (məsələn seçilmiş dövr) — adi yerli
+      ayarlarda.</li>
+</ul>
+<p>Bu məlumatların heç biri bizə göndərilmir. Tətbiqi silsəniz hamısı cihazla
+birlikdə silinir.</p>
+
+<h2>2. Cihaz identifikatoru</h2>
+<p>Lisenziyanın məhz sizin cihazınıza bağlanması üçün sistemin verdiyi cihaz
+identifikatoru işlənir. O, <strong>SHA-256 ilə heşlənir</strong> — yəni geri
+çevrilə bilməyən rəqəm sırasına dönür və yalnız aktivasiyanın yoxlanması üçün
+istifadə olunur. Reklam, profil qurma və ya izləmə məqsədi ilə
+<strong>işlənmir</strong>.</p>
+<p class="alt">iOS-da bu identifikator tətbiq tamamilə silinib yenidən
+quraşdırıldıqda dəyişir — o halda aktivasiya açarı yenidən lazım olur.</p>
+
+<h2>3. Biznes məlumatları</h2>
+<p>Dövriyyə, satış, kontragent və sənəd məlumatları <strong>müəssisənin öz 1C
+serverindən</strong> gəlir və yalnız ekranda göstərilir. Biz bu məlumatları
+görmürük, toplamırıq və üçüncü tərəfə vermirik. Məlumatın saxlanması,
+yedəklənməsi və girişin idarəsi müəssisənin öz məsuliyyətindədir.</p>
+
+<div class="qutu">
+  <p><strong>Şəbəkə qeydi:</strong> tətbiq birbaşa müəssisənin serverinə
+  qoşulur, aradakı heç bir xidmətə məlumat ötürülmür. Bağlantının
+  şifrələnməsi (HTTPS) serverin quraşdırılmasından asılıdır — serverinizdə
+  sertifikat varsa qoşulma şifrəli olur. Sertifikat yoxdursa, şəbəkənizin
+  təhlükəsizliyinə diqqət edin; HTTPS tövsiyə olunur.</p>
+</div>
+
+<h2>4. Reklam və analitika yoxdur</h2>
+<p>Tətbiqdə reklam şəbəkəsi, analitika (Google Analytics, Firebase və bənzəri)
+və ya üçüncü tərəf izləmə kitabxanası <strong>yoxdur</strong>. Heç bir
+istifadə statistikası bizə göndərilmir.</p>
+
+<h2>5. Hesabatların çıxarılması</h2>
+<p>Hesabatlar <strong>PDF</strong> və <strong>Excel</strong> faylı kimi
+cihazınızda yaradılır. Onları kimə göndərəcəyinizə yalnız siz qərar verirsiniz —
+tətbiq özü heç bir yerə göndərmir.</p>
+
+<h2>6. Uşaqlar</h2>
+<p>Tətbiq biznes istifadəsi üçündür, uşaqlar üçün nəzərdə tutulmayıb və
+onlardan bilərəkdən məlumat toplanmır.</p>
+
+<h2>7. Dəyişikliklər</h2>
+<p>Bu siyasət yenilənə bilər. Yenilənmə tarixi səhifənin yuxarısında göstərilir.</p>
+
+<h2>8. Əlaqə</h2>
+<div class="qutu">
+  <p><strong>XSoftData</strong><br>
+  E-poçt: <a href="mailto:helpnetwork78@gmail.com">helpnetwork78@gmail.com</a></p>
+  <p class="alt">Müraciətlərə adətən 1–3 iş günü ərzində cavab verilir.</p>
+</div>
+<a class="duyme" href="xsoftdata.html">Dəstək səhifəsi →</a>
+
+<footer>
+  <p>© 2026 XSoftData · <a href="xsoftdata.html">Dəstək</a></p>
+</footer>
+
+</div>
+</body>
+</html>
